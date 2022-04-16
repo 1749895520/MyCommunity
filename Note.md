@@ -112,4 +112,16 @@ Spring 官方指示文档，可以直接在这个网站找到组件如何构建
 server.port=8887
 ```
 
+## Day 03——2022.4.16
+
+#### 1.IDEA上提交代码到GitHub
+
+详情见[五、在IDEA中使用GIt版本控制并将本地代码上传至Github - 纯新手 - 博客园 (cnblogs.com)](https://www.cnblogs.com/alone-striver/p/7745744.html)
+
+* 安装Git
+* 创建GitHub仓库
+* 在IDEA中配置Git
+* IDEA项目引入VCS
+* 本地Repositories上传到GitHub的 Repositories
+
 ## 补充内容
