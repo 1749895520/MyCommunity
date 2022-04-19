@@ -124,4 +124,20 @@ server.port=8887
 * IDEA项目引入VCS
 * 本地Repositories上传到GitHub的 Repositories
 
+## Day 04——2022.4.19
+
+#### 1.明确需求
+
+* 标签列表
+* 话题列表
+* 热门列表
+* 导航列表
+* 登录
+* 搜索
+
+#### 2初识Bootstrap
+
+[Bootstrap中文网 (bootcss.com)](https://www.bootcss.com/)
+
+
 ## 补充内容
