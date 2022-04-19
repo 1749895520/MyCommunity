@@ -112,7 +112,7 @@ Spring 官方指示文档，可以直接在这个网站找到组件如何构建
 server.port=8887
 ```
 
-## Day 03——2022.4.16
+### Day 03——2022.4.16
 
 #### 1.IDEA上提交代码到GitHub
 
@@ -124,7 +124,7 @@ server.port=8887
 * IDEA项目引入VCS
 * 本地Repositories上传到GitHub的 Repositories
 
-## Day 04——2022.4.19
+### Day 04——2022.4.19
 
 #### 1.明确需求
 
@@ -135,9 +135,17 @@ server.port=8887
 * 登录
 * 搜索
 
-#### 2初识Bootstrap
+#### 2.初识Bootstrap
 
 [Bootstrap中文网 (bootcss.com)](https://www.bootcss.com/)
+
+将解压后的css、js、fonts三个文件夹复制到resources文件夹中，通过直接复制引用index.html文件来快速创建一个导航栏
+
+#### 3.使用GitHub登录
+
+[应用 - GitHub Docs](https://docs.github.com/cn/developers/apps)
+
+进入github在最下方找到API进入应用找到[构建 OAuth 应用程序](https://docs.github.com/cn/developers/apps/building-oauth-apps)。
 
 
 ## 补充内容
