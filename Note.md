@@ -147,5 +147,66 @@ server.port=8887
 
 进入github在最下方找到API进入应用找到[构建 OAuth 应用程序](https://docs.github.com/cn/developers/apps/building-oauth-apps)。
 
+### Day 05——2022.4.24
+
+#### 1.GitHub登录流程
+
+[授权 OAuth 应用程序 - GitHub Docs](https://docs.github.com/cn/developers/apps/building-oauth-apps/authorizing-oauth-apps)
+
+![1650732763808.png](image/Note/1650732763808.png)
+
+#### 2GitHub登录——调用authorize
+
+通过对index.html里登录按钮处连接的设置访问GitHub
+
+先添加地址
+
+```
+https://github.com/login/oauth/authorize
+```
+
+再根据创建好的 OAuth Apps 的详细信息来完成链接![1650734131603.png](image/Note/1650734131603.png)![1650733972212.png](image/Note/1650733972212.png)![1650733975791.png](image/Note/1650733975791.png)
+
+完成后：
+
+```html
+<a href="https://github.com/login/oauth/authorize?client_id=b0995866302b2547236b&redirect_uri=http://localhost:8887/callback&scope=user&state=1">~登录(L_G)
+```
+
+tips:地址输入后后续内容通过 ? 来分隔，后续内容通过 & 来区分
+
+#### 3.GitHub登录——获取code
+
+![1650735813024.png](image/Note/1650735813024.png)
+
+在src/main/java/com/example/community/controller包里新建AuthorizeController.java用来接收redirect_uri从GitHub中携带回来的code
+
+通过加@Controller标签识别Controller的使用
+
+在callback()方法中引入从GitHub中传回的code和state，最后返回到 index.html 页面
+
+```java
+package com.example.community.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class AuthorizeController {
+    @GetMapping("/callback")
+    public String callback(@RequestParam(name = "code") String code,
+                           @RequestParam(name = "state") String state) {
+        return "index";
+    }
+}
+```
+
+通过使用OKHTTP来进行post
+
+[OkHTTP官网](https://square.github.io/okhttp/)
+
+![1650735978202.png](image/Note/1650735978202.png)
+
 
 ## 补充内容
