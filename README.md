@@ -35,6 +35,16 @@
 
 [OkHTTP 官网](https://square.github.io/okhttp/)
 
+[Maven Repository(Maven仓库)](https://mvnrepository.com/)
+
+[fastjson的缺陷](https://blog.csdn.net/weixin_45737309/article/details/110359056)
+
+[如何用jackson快速替换fastjson](https://blog.csdn.net/hujkay/article/details/97040048?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&utm_relevant_index=1)
+
+[@Component和@Autowired解释](https://blog.csdn.net/weixin_43919304/article/details/98491759?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1.pc_relevant_antiscanv2&utm_relevant_index=2)
+
+[GitHub安全访问api](https://niter.cn/p/115)
+
 # 延伸阅读
 
 详情见[项目笔记](D:\ZFiend\Project\IDEA\StudentCommunity\community\Note.md)
