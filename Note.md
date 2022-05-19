@@ -494,9 +494,7 @@ private GithubProvider githubProvider;
 
 ![1651237657617.png](image/Note/1651237657617.png)
 
-点击登录——>通过GitHub的authorize接口跳转回callback地址并且携带了code——>调用GitHub的access_token接口携带code获取到access_token
-
-‘——>调用GitHub的user接口就能返回user信息
+点击登录——>通过GitHub的authorize接口跳转回callback地址并且携带了code——>调用GitHub的access_token接口携带code获取到access_token——>调用GitHub的user接口就能返回user信息
 
 #### 2.配置文件的配置
 
@@ -552,6 +550,10 @@ private GithubProvider githubProvider;
     }
 }
 ```
+
+### Day 08——2022.5.20
+
+#### 1.细说Session和Cookies原理
 
 
 ## 补充内容
